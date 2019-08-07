@@ -1,1 +1,80 @@
-
+void main(){
+  
+  
+  print ("hola mundo");
+  
+  var nombre = 'Nambo';
+  
+  print('Hola $nombre');
+  
+  
+ // -------------------------------------------------------------------
+  
+ // Numeros
+  
+  int empleados = 10;
+  double pi = 3.141592;
+  var numero = 1.0;
+  
+  print('$empleados - $pi - $numero');
+  
+// String - Cadenas de caracteres
+  
+  String nombre2 = 'Tony';
+  print(nombre2);
+  print(nombre2[0]);
+  print( nombre2 [nombre2.length - 1]);
+  
+// Booleanos y condiciones
+  
+  bool activado = true ;
+  print(activado);
+  
+//   activado = !activado;
+  
+  if ( activado == true){
+    print("El motor esta funcionando");
+    
+  } else {
+    print("Esta apagado");
+  }
+  
+// Tipo de datos - Lista
+  
+  List<int> numeros = [1,2,3,4,5];
+  print(numeros);
+  numeros.add(6);
+  print(numeros);
+  
+  //Tamano fijo
+  List masNumeros = List(10);
+  print(masNumeros);
+  masNumeros[0] = 1;
+  print( masNumeros ) ;
+  
+// Tipo de datos - Map
+  
+  String propiedad = 'soltero';
+  
+  Map<String, dynamic> persona = {
+    'nombre' : 'Carlos',
+    'edad'   : 32,
+    'soltero': true
+  };
+  
+  print( persona['nombre']);
+  print( persona['edad']);
+  print( persona[propiedad]);
+  
+  Map<int, String> personas = {
+    1: 'Tony',
+    2: 'Peter',
+    9: 'Strange'
+  };
+  
+  personas.addAll( {4: 'Banner'});
+  
+  print(personas);
+  print(personas[2]);
+  
+  }
